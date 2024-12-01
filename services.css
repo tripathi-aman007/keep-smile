@@ -1,0 +1,87 @@
+.services {
+  background-color: #eabfb9;
+  height: 84.6vh;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services p {
+  margin-top: 5%;
+  width: 65%;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  color: #b86b77;
+}
+
+.underline {
+  width: 20%;
+  height: 5px;
+  background-color: #dfa29a;
+}
+
+.rightImage {
+  width: 50%;
+}
+
+.rightImage img {
+  width: 100%;
+}
+
+.dubaiAppoint {
+  margin-top: 10%;
+}
+
+.dubaiAppoint a {
+  text-decoration: none;
+  background-color: black;
+  color: #eabfb9;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  box-shadow: 4px 5px 5px 2px #b86b77;
+}
+
+.dubaiAppoint a:hover {
+  background-color: #b86b77;
+  color: white;
+  box-shadow: 4px 5px 4px 2px #060505;
+}
+
+.serviceHeading {
+  padding: 5%;
+  padding-bottom: 0px;
+}
+
+.moreServices {
+  display: flex;
+  padding: 5%;
+  justify-content: space-around;
+}
+
+.service {
+  border: 1px solid;
+  background-color: black;
+  width: 33%;
+  border-radius: 1cap;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: bold;
+  color: #f6ced4;
+  padding: 5%;
+}
+
+.location {
+  color: white;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  padding-left: 16%;
+  margin-bottom: 5%;
+}
