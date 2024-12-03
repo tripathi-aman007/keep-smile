@@ -92,6 +92,12 @@ body {
   transform: rotate(180deg);
 }
 
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
 .heroSection {
   height: 80vh;
   width: 100%;
@@ -110,7 +116,7 @@ body {
 
 .line {
   width: 40%;
-  height: 5px;
+  height: 1%;
   background-color: #b68b77;
   margin-top: 1%;
   margin-bottom: 4%;
@@ -404,7 +410,7 @@ body {
 }
 
 .footer {
-  background-color: #B86B77;
+  background-color: #b86b77;
   color: white;
   padding: 5%;
   display: flex;
@@ -448,9 +454,100 @@ body {
 }
 .footer-bottom {
   text-align: center;
-  background-color: #B86B77;
+  background-color: #b86b77;
   padding: 10px;
   font-size: 14px;
   line-height: 2em;
 }
 
+/* WhatsApp Floating Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366; 
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e;
+}
+
+@media (max-width: 784px) {
+  .headerLinks {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 98px;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: 100vh;
+  }
+
+  .headerLinks a {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .dropdown {
+    margin: 0 auto;
+  }
+
+  .headerLinks a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .headerLinks.active {
+    display: flex;
+  }
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroSection h1 {
+    font-size: 1.8em;
+  }
+  .call {
+    width: 20%;
+  }
+  .testimonial-carousel {
+    padding: 3%;
+  }
+  .logo {
+    width: 12%;
+  }
+}
+
+@media (max-width: 320px) {
+  .headerLinks {
+    top: 42.74px;
+  }
+  .heroSection h1 {
+    margin: 0px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+  .call {
+    width: 40%;
+    margin-top: 10%;
+  }
+}
